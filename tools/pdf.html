@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Free PDF Tools - Merge, Split, Compress PDFs | TinyToolz</title>
+    <meta name="description" content="Free online PDF tools to merge, split, compress and convert PDF files. No registration required.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool-styles.css">
+</head>
+<body>
+    <header class="glass-header">
+        <!-- Same header as index.html -->
+    </header>
+
+    <main class="tool-page">
+        <div class="container">
+            <div class="tool-header">
+                <h1><i class="fas fa-file-pdf"></i> PDF Tools</h1>
+                <p>Free online PDF utilities with no watermarks</p>
+            </div>
+            
+            <div class="tool-container" id="merge">
+                <h2>PDF Merger</h2>
+                <p>Combine multiple PDF files into one document</p>
+                
+                <div class="tool-interface">
+                    <div class="upload-area" id="pdf-upload-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop PDF files here or click to browse</p>
+                        <input type="file" id="pdf-upload" accept=".pdf" multiple>
+                    </div>
+                    
+                    <div class="selected-files" id="selected-files">
+                        <!-- Files will appear here -->
+                    </div>
+                    
+                    <div class="tool-options">
+                        <label>
+                            <input type="checkbox" id="optimize-size">
+                            Optimize file size
+                        </label>
+                        
+                        <button id="merge-btn" class="btn">
+                            <i class="fas fa-object-group"></i> Merge PDFs
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tool-container" id="split">
+                <h2>PDF Splitter</h2>
+                <p>Extract specific pages or split by page ranges</p>
+                
+                <div class="tool-interface">
+                    <div class="upload-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop a PDF file here or click to browse</p>
+                        <input type="file" id="split-upload" accept=".pdf">
+                    </div>
+                    
+                    <div class="split-options">
+                        <div class="option-group">
+                            <label>Pages to extract:</label>
+                            <input type="text" id="page-range" placeholder="e.g. 1-3,5,7-9">
+                        </div>
+                        
+                        <button id="split-btn" class="btn">
+                            <i class="fas fa-cut"></i> Split PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="../js/pdf-tools.js"></script>
+</body>
+</html>
